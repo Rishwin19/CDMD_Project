@@ -1,0 +1,19 @@
+﻿<Window x:Class="CDMD_Project.Views.PatientProfilePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Patient Profile" Height="500" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Patient Details" FontWeight="Bold"/>
+            <TextBlock Text="Name: John Doe"/>
+            <TextBlock Text="Age: 45"/>
+            <TextBlock Text="Condition: Diabetes"/>
+
+            <Label Content="Vital Signs (Past 30 Days)" FontWeight="Bold" Margin="0,20,0,0"/>
+            
+
+            <Label Content="Doctor's Notes" FontWeight="Bold" Margin="0,20,0,0"/>
+            <TextBox Name="DoctorsNotes" Height="100" AcceptsReturn="True" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>

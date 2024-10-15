@@ -1,0 +1,30 @@
+﻿<Window x:Class="CDMD_Project.Views.TreatmentPlanPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Treatment Plan" Height="450" Width="800">
+    <Grid>
+        <!-- Title -->
+        <TextBlock Text="Treatment Plan" FontSize="24" FontWeight="Bold"
+                   HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <!-- Medications -->
+        <TextBlock Text="Medications" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MedicationsTextBox" Text="{Binding Medications}" 
+                 Margin="10,70,0,0" Width="760"/>
+
+        <!-- Diet Plan -->
+        <TextBlock Text="Diet Plan" Margin="10,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DietPlanTextBox" Text="{Binding DietPlan}" 
+                 Margin="10,140,0,0" Width="760"/>
+
+        <!-- Exercise Plan -->
+        <TextBlock Text="Exercise Plan" Margin="10,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ExercisePlanTextBox" Text="{Binding ExercisePlan}" 
+                 Margin="10,210,0,0" Width="760"/>
+
+        <!-- Save Button -->
+        <Button Content="Save Plan" Command="{Binding SavePlanCommand}" 
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                Width="100" Margin="10,0,0,10"/>
+    </Grid>
+</Window>

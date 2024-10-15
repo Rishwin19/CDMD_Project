@@ -1,0 +1,21 @@
+﻿<Window x:Class="CDMD_Project.Views.DataInputPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Data Input" Height="400" Width="600">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Manual Data Entry" FontWeight="Bold"/>
+
+            <Label Content="Blood Glucose Level (mg/dL)" Margin="0,10,0,0"/>
+            <TextBox Name="GlucoseInput" Width="200"/>
+
+            <Label Content="Blood Pressure (mmHg)" Margin="0,10,0,0"/>
+            <TextBox Name="BloodPressureInput" Width="200"/>
+
+            <Button Content="Submit Data" Width="150" Margin="0,20,0,0"/>
+
+            <Label Content="Upload Report" FontWeight="Bold" Margin="20,10,0,0"/>
+            <Button Content="Choose File" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
